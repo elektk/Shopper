@@ -279,3 +279,102 @@ h1 {
     left: 1236px;
     height: 53px;
 }
+.featured_products {
+    width: 100%;
+    height: 591px;
+    background: #845EC2;
+}
+.featured_products div {
+    display: inline-block;
+}
+.text {
+    width: 692px;
+    height: 73px;
+    margin: 73px 0 0 90px;
+}
+.airpod1 {
+    position: absolute;
+    width: 189px;
+    height: 331px;
+    top: 1193px;
+    left: 85px;
+    border-radius: 179px;    
+}
+.airpod2 {
+    position: absolute;
+    width: 189px;
+    top: 1123px;
+    left: 306px;
+    border-radius: 179px;
+    height: 331px;
+}
+.airpod3 {
+    position: absolute;
+    width: 179px;
+    top: 1199px;
+    left: 529px;
+    border-radius: 136px;
+    height: 326px;
+}
+.left_ellements h3 {
+    padding: 365px 0 0 286px;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 31px;
+    color: #ffffff;
+}
+.left_ellements h3 span {
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 38px;
+    font-size: 31px;
+}
+.right_ellements {
+
+}
+.right_ellements h2 {
+    position: absolute;
+    top: 1156px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 54px;
+    font-size: 44px;
+    color: #FFFFFF;
+    width: 559px;
+    height: 54px;
+}
+.right_ellements p {
+    position: absolute;
+    top: 1220px;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.right_ellements button {
+    position: absolute;
+    top: 1360px;
+    width: 263px;
+    border-radius: 10px;
+    height: 70px;
+    color: #FFFFFF;
+    background: #10B981;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.right_ellements a {
+    position: absolute;
+    top: 1377px;
+    left: 1149px;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 35px;
+    font-size: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
