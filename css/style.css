@@ -265,3 +265,17 @@ h1 {
     left: 934px;
     height: 299px;
 }
+.star1 {
+    position: absolute;
+    width: 53px;
+    top: 319px;
+    left: 859px;
+    height: 53px;
+}
+.star2 {
+    position: absolute;
+    width: 53px;
+    top: 872px;
+    left: 1236px;
+    height: 53px;
+}
