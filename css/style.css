@@ -1,9 +1,14 @@
+@import url(./buttons.css);
 *{
     margin: 0;
     border: none;
     background:none;
     padding: 0; 
     box-sizing:border-box; 
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    width: 100%;
 }
 /* first section start*/
 .home_page {
@@ -22,7 +27,6 @@
 .logo {
     width: 172px;
     height: 49px;
-    font-family: Montserrat;
     font-size: 40px;
     font-style: italic;
     font-weight: 400;
@@ -70,10 +74,9 @@
     padding-right: 23px;
 }
 .basket {
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 16px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 229px;
@@ -90,10 +93,9 @@
 }
 .auth {
     color: #ffffff;
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 16px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 247px;
@@ -114,31 +116,28 @@
     background-color: #10B981;
 }
 .nav {
-    display: inline-block;
+    display: flex;
     padding-left: 385px;
     padding-top: 28px;
 }
 .nav_elem{
-    display: inline-block;
+    display: flex;
     padding-left: 75px;
 }
 .nav_elem_btn {
     color: #ffffff;
-    font-family: Montserrat;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
     cursor: pointer;
 }
 h1 {
-    font-family: Montserrat;
     font-weight: 600;
     line-height: 78px;
     font-size: 64px;
     padding: 126px 0 0 85px;
 }
 .left_content p {
-    font-family: Montserrat;
     font-weight: 500;
     line-height: 35px;
     font-size: 21px;
@@ -152,7 +151,6 @@ h1 {
     border-radius: 10px;
     height: 70px;
     background: #10B981;
-    font-family: Montserrat;
     font-weight: 600;
     line-height: 26px;
     font-size: 21px;
@@ -168,7 +166,6 @@ h1 {
 }
 .reviews p {
     padding: 0 0 0 125px;
-    font-family: Montserrat;
     font-weight: 500;
     line-height: 35px;
     font-size: 26px;
@@ -213,7 +210,6 @@ h1 {
     cursor: pointer;
 }
 .right_content p {
-    font-family: Montserrat;
     font-weight: 500;
     line-height: 35px;
     font-size: 21px;
@@ -225,7 +221,6 @@ h1 {
     top: 350px;
 }
 .arc_text span {
-    font-family: Montserrat;
     font-weight: 600;
     line-height: 49px;
     font-size: 40px;
@@ -282,105 +277,77 @@ h1 {
 }
 /* first section end*/
 /* second section start*/
-.featured_products {
-    display: flex;
-    width: 100%;
-    height: 591px;
+.featured {
     background: #845EC2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 55px;
+    flex-wrap: wrap;
+    min-height: 591px;
+    padding: 85px 0;
 }
-.featured_products div {
+.featured__left_ell {
     display: inline-block;
 }
-.text {
-    width: 692px;
-    height: 73px;
-    margin: 73px 0 0 90px;
+.featured__title {
+    margin-bottom: 35px;
+    font-size: 60px;
+    line-height: 73px;
+    text-shadow: 0px 0px 2px white;
+    font-weight: 900;
+    color: #845EC2;
 }
-.airpod1 {
-    position: absolute;
-    width: 189px;
+.featured__img_conteainer {
+    position: relative;
+}
+.featured__img_conteainer > img {
+    width: 190px;
     height: 331px;
-    top: 1193px;
-    left: 85px;
-    border-radius: 179px;    
 }
 .airpod2 {
-    position: absolute;
-    width: 189px;
-    top: 1123px;
-    left: 306px;
-    border-radius: 179px;
-    height: 331px;
+    position: relative;
+    top: -69px;
+    margin: 0 33px;
 }
-.airpod3 {
-    position: absolute;
-    width: 179px;
-    top: 1199px;
-    left: 529px;
-    border-radius: 136px;
-    height: 326px;
-}
-.left_ellements h3 {
-    padding: 365px 0 0 286px;
-    font-family: Montserrat;
-    font-weight: 400;
-    line-height: 35px;
+.featured__price {
     font-size: 31px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 201px;
+}
+.featured__price span{
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 20px;
+    font-size: 31px;
+    line-height: 35px;
     color: #ffffff;
 }
-.left_ellements h3 span {
-    font-family: Montserrat;
-    font-weight: 600;
-    line-height: 38px;
-    font-size: 31px;
+.featured__right_ell {
+    display: inline-block;
+    width: 560px;
 }
-.right_ellements {
-
-}
-.right_ellements h2 {
-    position: absolute;
-    top: 1156px;
-    font-family: Montserrat;
-    font-weight: 600;
-    line-height: 54px;
+.featured__right_ell > h2 {
     font-size: 44px;
-    color: #FFFFFF;
-    width: 559px;
-    height: 54px;
-}
-.right_ellements p {
-    position: absolute;
-    top: 1220px;
-    font-family: Montserrat;
-    font-size: 21px;
-    font-weight: 500;
-    line-height: 35px;
-    color: #FFFFFF;
-}
-.right_ellements button {
-    position: absolute;
-    top: 1360px;
-    width: 263px;
-    border-radius: 10px;
-    height: 70px;
-    color: #FFFFFF;
-    background: #10B981;
-    font-family: Montserrat;
+    line-height: 54px;
+    color: #fff;
     font-weight: 600;
-    line-height: 26px;
-    font-size: 21px;
-    cursor: pointer;
 }
-.right_ellements a {
-    position: absolute;
-    top: 1377px;
-    left: 1149px;
-    font-family: Montserrat;
+.featured__right_ell > p {
+    margin-top: 10px;
+    font-size: 21px;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 500;
+}
+.featured__right_ell a {
     font-weight: 600;
     line-height: 35px;
     font-size: 21px;
     color: #FFFFFF;
     text-decoration: none;
+    margin-left: 49px;
 }
 /* second section end*/

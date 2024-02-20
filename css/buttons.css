@@ -1,0 +1,12 @@
+.featured__right_ell button {
+    margin-top: 35px;
+    width: 263px;
+    border-radius: 10px;
+    height: 70px;
+    color: #FFFFFF;
+    background: #10B981;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 21px;
+    cursor: pointer;
+}
