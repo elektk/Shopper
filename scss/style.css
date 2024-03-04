@@ -484,7 +484,172 @@ h1 {
   text-decoration: none;
   margin-left: 49px;
 }
+/* sellers */
+.sellers, .trending {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.sellers__title, .trending__title{
+  font-weight: 600;
+  line-height: 54px;
+  font-size: 44px;
+  text-align: center;
+  color: #2B2626;
+  margin-bottom: 55px;
+}
+
+.sellers__btn-wrapper, .trending__btn-wrapper {
+  margin-bottom: 55px; 
+}
+.card__text {
+  color:#2B2626;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 35px;
+}
+.card__rating {
+  display: inline-flex;
+  justify-content: baseline;
+}
+.card__rating-count {
+  display: inline-flex;
+  color: #888888;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 35px;
+  margin-left: 13px;
+}
+.card__btn {
+  width: 100%;
+}
+.card__discount {
+  position: absolute;
+  right: 19px;
+  top: 13px;
+  background-color: #10B981;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.card__discount > p {
+  width: 60%;
+  text-align: center;
+}
+.card {
+  width: 361px;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  position: relative;
+}
+.card__product {
+  width: 100%;
+  height: 438px;
+  padding: 30px 21px 18px 21px;
+  background-color: #ecfef4;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__img {
+  width: 196px;
+  height: 196px;
+}
+.card__descr {
+  width: 100%;
+  height: 164px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 51px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card__product {
+  background-color: #ECFEF4;
+}
+.card__product_blue {
+  background-color: #C9F2FF;
+}
+.card__product_purp {
+  background-color: #E5D5FF;
+}
+.card__product_grey {
+  background-color: #E0EFFF;
+}
+.card__product_alice {
+  background-color: #E8F9FF;
+}
+.card__product_cyan {
+  background-color: #D3FBFB;
+}
+.sellers, .earphones{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.sellers__btn-wrapper, .trending__btn-wrapper {
+  margin-bottom: 99px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.button-oval {
+  width: 177px;
+  height: 91px;
+  border-radius: 50%;
+  background-color: #10B981;
+  color: #fff;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 600;
+  border: none;
+}
+.card__btn {
+  width: 100%;
+  height: 70px;
+  background-color: #10B981;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  border: none;
+}
+.sellers__cards, .trending__cards {
+  display: flex;
+  gap: 93px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* earphones */
+.earphones {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+.card__discount_purp {
+  background-color: #845ec2;
+}
+.card__discount_cyan {
+  background-color: #08BDBE;
+}
 @media (max-width: 1140px) {
   .header {
     gap: 0;
