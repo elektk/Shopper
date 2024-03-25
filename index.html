@@ -18,10 +18,27 @@
 </head>
 
 <body>
+    <!-- mobile menu -->
+    <section class="mobile-menu hidden">
+        <button class="mobile-menu__close">
+            x
+        </button>
+        <form class="search_form">
+            <input class="search_input" type="text" placeholder="Search Items">
+            <button class="button_search" type="submit"><img src="./svg/search.svg"></button>
+        </form>
+        <ul class="mobile-menu__nav">
+            <li class="nav-elem"><a class="nav_elem_btn" href="#featured">Featured</a></li>
+            <li class="nav-elem"><a class="nav_elem_btn" href="#sellers">Sellers</a></li>
+            <li class="nav-elem"><a class="nav_elem_btn" href="#trending">Trending</a></li>
+            <li class="nav-elem"><a class="nav_elem_btn" href="#launches">Launches</a></li>
+        </ul>
+    </section>
     <!-- block home -->
     <section class="home_page">
         <div class="header">
             <h2 class="logo">Shop<span>per</span></h2>
+            <button class="menu_button"><img src="./svg/burger_menu.svg" alt="menu"></button>
             <form class="search_form">
                 <input class="search_input" type="text" placeholder="Search Items">
                 <button class="button_search" type="submit"><img src="./svg/search.svg"></button>
@@ -37,10 +54,10 @@
         </div>
         <nav class="navigate">
             <ul class="nav">
-                <li class="nav_elem"><button class="nav_elem_btn">Features</button></li>
-                <li class="nav_elem"><button class="nav_elem_btn">Products</button></li>
-                <li class="nav_elem"><button class="nav_elem_btn">Blog</button></li>
-                <li class="nav_elem"><button class="nav_elem_btn">About</button></li>
+                <li class="nav_elem"><a class="nav_elem_btn" href="#featured">Featured</a></li>
+                <li class="nav_elem"><a class="nav_elem_btn" href="#sellers">Sellers</a></li>
+                <li class="nav_elem"><a class="nav_elem_btn" href="#trending">Trending</a></li>
+                <li class="nav_elem"><a class="nav_elem_btn" href="#launches">Launches</a></li>
             </ul>
         </nav>
         <div class="about">
@@ -93,7 +110,7 @@
         </div>
     </section>
     <!-- block Our Featured Products -->
-    <section class="featured">
+    <section class="featured" id="featured">
         <div class="featured__left_ell">
             <h2 class="featured__title">Apple wireless Airpod</h2>
             <div class="featured__img_conteainer">
@@ -111,14 +128,14 @@
         </div>
     </section>
     <!-- block Top Sellers -->
-    <section class="sellers">
+    <section class="sellers" id="sellers">
         <h2 class="sellers__title">Top Sellers</h2>
         <div class="sellers__btn-wrapper">
-            <button class="button-oval">Top Picks</button>
+            <button class="button-oval active">Top Picks</button>
             <button class="button-oval">Watches</button>
         </div>
         <div class="sellers__cards">
-            <div class="tab__card card">
+            <!-- <div class="tab__card card">
                 <div class="card__product">
                     <img class="card__img" src="./images/headphone1.png" alt="card__headphons">
                     <div class="card__descr">
@@ -178,11 +195,11 @@
                 <div class="card__discount card__discount_purp">
                     <p>Save 40%</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- Trending Earphones -->
-    <section class="trending">
+    <section class="trending" id="trending">
         <h2 class="trending__title">Trending Earphones</h2>
         <div class="trending__btn-wrapper">
             <button class="button-oval">Earbuds</button>
@@ -254,7 +271,7 @@
         </div>
     </section>
     <!-- block New Launches -->
-    <section class="launches">
+    <section class="launches" id="launches">
         <h2 class="launches__title">New Launches</h2>
         <div class="launches__wrapper">
             <div class="launches__left_ell">
@@ -331,6 +348,8 @@
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/tabs.js"></script>
 </body>
 
 </html>
