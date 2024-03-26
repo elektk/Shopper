@@ -34,8 +34,8 @@ const trendingCards = document.querySelector('.trending__cards');
 const sellersBtnWrapper = document.querySelector('.sellers__btn-wrapper');
 const trendingBtnWrapper = document.querySelector('.trending__btn-wrapper');
 
-function getCards (cardInfoList, elem) {
-    const arr = cardInfoList.forEach(cardInfo => {
+function getCards (cardInfoList, elem, remove = false) {
+    const arr = cardInfoList.map(cardInfo => {
         const tab = `<div class="tab__card card">
               <div class="card__product">
                   <img class="card__img" src="./images/headphone1.png" alt="card__headphons">
@@ -57,22 +57,32 @@ function getCards (cardInfoList, elem) {
                   <p>Save 60%</p>
               </div>
             </div>`
-            elem.insertAdjacentHTML("beforeend",tab);
+            return tab;
+            // elem.insertAdjacentHTML("beforeend",tab);
     })
+    if(remove){
+        elem.remove("beforeend",arr.join());
+        return
+    }
+    elem.insertAdjacentHTML("beforeend",arr.join());
 }
 
 sellersBtnWrapper.addEventListener("click", (event)=>{
     const target = event.target;
+    const emptyWrapper = document.createElement('div');
+    emptyWrapper.classList.add('sellers__cards')
+
     const ovalButtons = sellersBtnWrapper.querySelectorAll('button');
     ovalButtons.forEach(btn =>{
         btn.classList.remove('active');
     })
     target.classList.add('active');
-    // sellersCards.replaceWith('');
     if(target.innerText == "Top Picks"){
-            getCards(cardInfoTopPicksList, sellersCards);
+        // sellersCards.replaceWith(emptyWrapper)
+            getCards(cardInfoTopPicksList, sellersCards, true);
     }else {
-        getCards(cardInfoWatchesList, sellersCards);
+        // sellersCards.replaceWith(emptyWrapper)
+        getCards(cardInfoWatchesList, sellersCards, false);
     }
 })
 
