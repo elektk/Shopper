@@ -1,4 +1,4 @@
-// const { default: Link } = require("next/link");
+const getXards = require('./js/getCards.js')
 
 const mobileMenu = document.querySelector('.mobile-menu');
 const homePage = document.querySelector('.home_page');
@@ -40,3 +40,5 @@ mobileMenu.querySelector('.mobile-menu__close')
 
 // mobileMenu.addEventListener("click", scrllToSection);
 // homePage.addEventListener("click", scrllToSection);
+
+console.log('Webpack work');
